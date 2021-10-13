@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --negro:rgba(34,34,34,1);
+  --negro50: rgba(34,34,34,0.5);
+  --negro10: rgba(34,34,34,0.1);
+  --blanco: rgba(255,255,255,1);
+  --blanco50: rgba(255,255,255,0.5);
+  --blanco20:  rgba(255,255,255,0.2);
+}
+
+html {
+  font-size: 16px;
+}
+
+hr {
+  height: 0;
+  width: 100%;
+}
+
+hr.dark {
+  background-color: var(--blanco50);
+}
+
+hr.light {
+  background-color: var(--negro50);
+}
+
+#fullscreen {
+  margin: 0.5rem;
+  padding: 20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+  background-image: url("../img/fullscreen.png");
+}
+
+.exitFullscreen {
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 2px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  border: solid black 1px;
+  background-image: url("../img/exit_fullscreen.png");
+}
+
+.copiarTarea {
+  background-image: url("../img/icono_copiar.png");
+}
+
+.compartirTarea {
+  background-image: url("../img/icono_compartir.png");
+}
+
+.eliminarTarea {
+  background-image: url("../img/icono_eliminar.png");
+}
+
+/*
+  .btn{
+  
+    padding: 2px;
+    width: 30px;
+    //height: 30px;
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border: none
+  }
+  */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.dark {
+  background-color: var(--negro);
+}
+
+body.light {
+  background-color: var(--blanco);
+}
+
+body header h1 {
+  margin-left: 30%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.25rem;
+}
+
+body header h1.dark {
+  color: var(--blanco);
+}
+
+body header h1.light {
+  color: var(--negro);
+}
+
+body header, body main {
+  width: 32rem;
+  margin-bottom: 2rem;
+}
+
+body main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+}
+
+body main form.dark {
+  background-color: var(--blanco50);
+}
+
+body main form.light {
+  background-color: var(--negro50);
+}
+
+body main form input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  margin-right: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.5rem;
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid black;
+  border: none;
+  /*
+            &.dark{
+
+              background-color: var(--blanco);
+            }
+        
+            &.light{
+        
+              background-color: var(--negro);
+            }
+*/
+}
+
+body main form input.dark {
+  color: var(--blanco50);
+}
+
+body main form input.light {
+  color: var(--negro50);
+}
+
+body main form input:focus {
+  outline: 1px solid red;
+}
+
+/*
+            input{
+
+          flex-grow: 2;
+          margin-right: 0.5rem;
+          font-size: 1.5rem;
+          margin-left: 5rem;
+          flex-grow: 2;
+         // width: 70%;
+          font-size: 16px;
+          border: 1px solid black;
+               
+                
+            }
+            */
+/*
+            input:checked  + p { 
+          
+              text-decoration: line-through;
+              text-decoration-color: red;
+              text-decoration-style: solid;
+        
+            }
+*/
+.button {
+  /*
+          padding: 10px;
+          background: #d9d9d9;
+         // width: 30%;
+          color: #555;
+          float: center;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 0;
+          border: solid black 1px;
+          margin-left: 5px;
+          */
+  /*
+         border-radius: 0.5rem;
+         height: 3rem;
+         width: 3rem;
+         padding: 0.5rem;
+         cursor: pointer;
+         font-size: 1.5rem;
+         font-family: 'Roboto', sans-serif;
+         background-size: cover;
+         background-position: center;
+         border: none
+         */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+            .checked{
+              
+              text-decoration: line-through;
+              text-decoration-color: red;
+              text-decoration-style: solid;
+            }*/
+input:checked + p {
+  text-decoration: line-through;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+.input {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.border-radius-4 {
+  border-radius: 0.5rem;
+}
+
+/*
+            form{
+            
+          display: flex;
+          flex-direction: row;
+          padding:0.5rem;
+          position:sticky;
+          top: 2rem;
+        }*/
+#lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+#lista li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#lista li.dark {
+  background-color: var(--blanco50);
+}
+
+#lista li.light {
+  background-color: var(--negro50);
+}
+
+#lista li p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+  background-color: transparent;
+}
+
+#lista li p.dark {
+  color: var(--blanco50);
+}
+
+#lista li p.light {
+  color: var(--negro50);
+}
+
+#lista li button.button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+/*
+  ul {
+    padding: 10px;
+    width: 80%;
+    flex-direction: row;
+    
+  }
+  */
+/*
+  ul li {
+    cursor: pointer;
+    position: relative;
+    background: #eee;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+  */
+ul li p {
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
+}
+
+.checkbox {
+  margin-top: 0.5rem;
+  outline-style: groove;
+  accent-color: black;
+  border: 2px solid;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*
+  input{
+
+    margin-right: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border: 2px solid black;
+    background-color: rgba(255,255,255,0.5);;
+
+    &:checked  + p { 
+  
+      text-decoration: line-through;
+  
+      
+    }
+  }*/
+/*
+  input:checked  + p { 
+  
+    text-decoration: line-through;
+
+    
+  }
+  */
+/*
+  #form {
+  
+    padding: 10px 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-right: 20%;
+
+    border-radius: 0.5 rem;
+  }
+  */
+/* #agregarTarea {
+    padding: 20px;
+    background: #d9d9d9;
+    width: 20%;
+    color: #555;
+    float: center;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+    border: solid black 1px;
+    margin-left: 5px;
+    
+    
+  }*/
+/* #nuevaTareaInput {
+    
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    flex-grow: 2;
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid black;
+  
+  }
+  */
+#agregarTarea {
+  background-image: url(../img/check.png);
+}
+
+#agregarTarea:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 560 px) {
+  body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  header, main {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
